@@ -16,7 +16,7 @@ const displayData = (data) => {
     setInnerText('city-name', data.name);
     setInnerText('temperature', data.main.temp);
     setInnerText('condition', data.weather[0].main);
-    
+
     // set weather icon 
     const url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const weatherIcon = document.getElementById('weather-icon');
